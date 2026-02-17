@@ -7,7 +7,8 @@
 [ext_resource type="AudioStream" uid="uid://das8w0xv21d3t" path="res://DK Island Swing Returns - Donkey Kong Country Returns [OST] [dmMbAaumSKk](1).mp3" id="5_fhrbb"]
 [ext_resource type="Texture2D" uid="uid://dbd4wbp8t1iew" path="res://backgroud/Pixelart Grasslands/DirtTiles.png" id="6_20fby"]
 [ext_resource type="Texture2D" uid="uid://bj35rxah4uty5" path="res://backgroud/Pixelart Grasslands/GrassTiles.png" id="7_16wam"]
-[ext_resource type="PackedScene" uid="uid://cfk3oxqktjyok" path="res://character.tscn" id="8_xevve"]
+[ext_resource type="PackedScene" uid="uid://cfk3oxqktjyok" path="res://player.tscn" id="8_16wam"]
+[ext_resource type="PackedScene" uid="uid://vl4200beymb7" path="res://mob.tscn" id="9_16wam"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_5sqtp"]
 texture = ExtResource("6_20fby")
@@ -123,6 +124,9 @@ autoplay = true
 tile_map_data = PackedByteArray("AAD2/wUAAAACAAYAAAD3/wUAAAADAAYAAAD4/wUAAAACAAYAAAD5/wUAAAADAAYAAAD6/wUAAAACAAYAAAD7/wUAAAADAAYAAAD8/wUAAAACAAYAAAD9/wUAAAADAAYAAAD+/wUAAAACAAYAAAD//wUAAAADAAYAAAAAAAUAAAACAAYAAAABAAUAAAADAAYAAAACAAUAAAACAAYAAAADAAUAAAADAAYAAAAEAAUAAAACAAYAAAAFAAUAAAADAAYAAAAIAAUAAAACAAYAAAAJAAUAAAADAAYAAAAGAAUAAAACAAYAAAAHAAUAAAADAAYAAAD4/wQAAgACAAYAAAD5/wQAAgACAAYAAAD2/wQAAgACAAYAAAD3/wQAAgACAAYAAAD6/wQAAgACAAYAAAD7/wQAAgACAAYAAAD8/wQAAgACAAYAAAD9/wQAAgACAAYAAAD+/wQAAgACAAYAAAD//wQAAgACAAYAAAAAAAQAAgACAAYAAAABAAQAAgACAAYAAAACAAQAAgACAAYAAAAIAAQAAgACAAYAAAAJAAQAAgACAAYAAAAGAAQAAgACAAYAAAAHAAQAAgACAAYAAAAEAAQAAgACAAYAAAAFAAQAAgACAAYAAAADAAQAAgACAAYAAAA=")
 tile_set = SubResource("TileSet_ulhx2")
 
-[node name="CharacterBody2D" parent="." unique_id=1370263588 instance=ExtResource("8_xevve")]
-position = Vector2(-138.33331, 56.111122)
+[node name="Player" parent="." unique_id=1370263588 instance=ExtResource("8_16wam")]
+position = Vector2(-135.55553, 56.666676)
 scale = Vector2(0.7, 0.7)
+
+[node name="mob" parent="." unique_id=1431857032 instance=ExtResource("9_16wam")]
+position = Vector2(31.11111, 63.33335)
