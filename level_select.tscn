@@ -1,0 +1,140 @@
+[gd_scene format=3 uid="uid://bs3laer574ayu"]
+
+[ext_resource type="Texture2D" uid="uid://dgqmytdjmffgb" path="res://LevelSelect.png" id="1_il3u1"]
+[ext_resource type="Texture2D" uid="uid://b2i2jle0ate5o" path="res://BotonSuelo.tres" id="2_vomi7"]
+[ext_resource type="Script" uid="uid://cjwtik6g0mtah" path="res://level_select.gd" id="2_wevku"]
+[ext_resource type="AudioStream" uid="uid://bhkdpgb7ox6cp" path="res://World Select - Donkey Kong Country Returns (OST) [0HB8BzzQ81g].mp3" id="4_apu6u"]
+
+[node name="LevelSelect" type="Control" unique_id=1483345205]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 576.0
+offset_top = 324.0
+offset_right = 576.0
+offset_bottom = 324.0
+scale = Vector2(1.0666665, 1.0502431)
+script = ExtResource("2_wevku")
+
+[node name="LevelSelect" type="Sprite2D" parent="." unique_id=627233953]
+position = Vector2(-6.1035156e-05, 0)
+scale = Vector2(1.0000001, 1.0000001)
+texture = ExtResource("1_il3u1")
+
+[node name="Level1Button" type="TextureButton" parent="." unique_id=204370629]
+layout_mode = 0
+offset_left = 45.000023
+offset_top = 125.68518
+offset_right = 67.50002
+offset_bottom = 148.53702
+texture_normal = ExtResource("2_vomi7")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="Level1Button" unique_id=1574264873]
+layout_mode = 0
+offset_left = 6.562502
+offset_top = -1.9043274
+offset_right = 16.562502
+offset_bottom = 21.095673
+text = "1"
+
+[node name="Level2Button" type="TextureButton" parent="." unique_id=1136729790]
+layout_mode = 0
+offset_left = -180.00003
+offset_top = 49.51234
+offset_right = -157.50003
+offset_bottom = 72.36418
+texture_normal = ExtResource("2_vomi7")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="Level2Button" unique_id=1294785595]
+layout_mode = 0
+offset_left = 6.562502
+offset_top = -1.9043274
+offset_right = 16.562502
+offset_bottom = 21.095673
+text = "2"
+
+[node name="Level3Button" type="TextureButton" parent="." unique_id=749270924]
+layout_mode = 0
+offset_left = 135.00003
+offset_top = -11.425934
+offset_right = 157.50003
+offset_bottom = 11.425903
+texture_normal = ExtResource("2_vomi7")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="Level3Button" unique_id=362688436]
+layout_mode = 0
+offset_left = 6.562502
+offset_top = -1.9043274
+offset_right = 16.562502
+offset_bottom = 21.095673
+text = "3"
+
+[node name="Level4Button" type="TextureButton" parent="." unique_id=352948093]
+layout_mode = 0
+offset_left = -150.0
+offset_top = -11.425934
+offset_right = -127.5
+offset_bottom = 11.425903
+texture_normal = ExtResource("2_vomi7")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="Level4Button" unique_id=389705053]
+layout_mode = 0
+offset_left = 6.562502
+offset_top = -1.9043274
+offset_right = 16.562502
+offset_bottom = 21.095673
+text = "4"
+
+[node name="Level5Button" type="TextureButton" parent="." unique_id=1037166450]
+layout_mode = 0
+offset_left = 202.50006
+offset_top = 41.895058
+offset_right = 225.00006
+offset_bottom = 64.746895
+texture_normal = ExtResource("2_vomi7")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="Level5Button" unique_id=1792442924]
+layout_mode = 0
+offset_left = 6.562502
+offset_top = -1.9043274
+offset_right = 16.562502
+offset_bottom = 21.095673
+text = "5"
+
+[node name="Level6Button" type="TextureButton" parent="." unique_id=610217101]
+layout_mode = 0
+offset_left = 97.50003
+offset_top = 79.981476
+offset_right = 120.00003
+offset_bottom = 102.83331
+texture_normal = ExtResource("2_vomi7")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="Level6Button" unique_id=374713992]
+layout_mode = 0
+offset_left = 6.562502
+offset_top = -1.9043274
+offset_right = 16.562502
+offset_bottom = 21.095673
+text = "6"
+
+[node name="MusicaFondo" type="AudioStreamPlayer2D" parent="." unique_id=1446173466]
+stream = ExtResource("4_apu6u")
+autoplay = true
+
+[connection signal="pressed" from="Level1Button" to="." method="_on_level_1_button_pressed"]
+[connection signal="pressed" from="Level2Button" to="." method="_on_level_2_button_pressed"]
+[connection signal="pressed" from="Level3Button" to="." method="_on_level_3_button_pressed"]
+[connection signal="pressed" from="Level4Button" to="." method="_on_level_4_button_pressed"]
+[connection signal="pressed" from="Level5Button" to="." method="_on_level_5_button_pressed"]
+[connection signal="pressed" from="Level6Button" to="." method="_on_level_6_button_pressed"]

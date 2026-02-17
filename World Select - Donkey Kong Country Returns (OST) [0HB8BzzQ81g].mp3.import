@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bhkdpgb7ox6cp"
+path="res://.godot/imported/World Select - Donkey Kong Country Returns (OST) [0HB8BzzQ81g].mp3-4a463865ef509374aceb58b61382ea9d.mp3str"
+
+[deps]
+
+source_file="res://World Select - Donkey Kong Country Returns (OST) [0HB8BzzQ81g].mp3"
+dest_files=["res://.godot/imported/World Select - Donkey Kong Country Returns (OST) [0HB8BzzQ81g].mp3-4a463865ef509374aceb58b61382ea9d.mp3str"]
+
+[params]
+
+loop=true
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

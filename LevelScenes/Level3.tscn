@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://bv3584ldwljsk"]
+
+[ext_resource type="PackedScene" uid="uid://0cxryllameut" path="res://background.tscn" id="1_qhgdo"]
+
+[node name="Bg1" unique_id=1371810890 instance=ExtResource("1_qhgdo")]
+position = Vector2(576, 322)
