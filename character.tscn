@@ -70,8 +70,7 @@ animations = [{
 "speed": 8.0
 }]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_pjt0s"]
-size = Vector2(16, 27)
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_pjt0s"]
 
 [node name="CharacterBody2D" type="CharacterBody2D" unique_id=1370263588]
 safe_margin = 0.01
@@ -82,8 +81,8 @@ position = Vector2(-1, -18)
 scale = Vector2(1.875, 2)
 sprite_frames = SubResource("SpriteFrames_c1b4b")
 animation = &"walk"
-frame_progress = 0.58973587
+frame_progress = 0.7679395
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1631047225]
-position = Vector2(-1, 0)
-shape = SubResource("RectangleShape2D_pjt0s")
+position = Vector2(-1, -0.25)
+shape = SubResource("CapsuleShape2D_pjt0s")
