@@ -1,0 +1,98 @@
+[gd_scene format=3 uid="uid://vl4200beymb7"]
+
+[ext_resource type="Texture2D" uid="uid://dh8eql3jg120g" path="res://backgroud/Pixelart Grasslands/EnemySheet.png" id="1_dy6sc"]
+[ext_resource type="Script" uid="uid://dal07fiq8p8j2" path="res://mob.gd" id="1_nokgg"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nokgg"]
+atlas = ExtResource("1_dy6sc")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_b3mxk"]
+atlas = ExtResource("1_dy6sc")
+region = Rect2(0, 32, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ubaqv"]
+atlas = ExtResource("1_dy6sc")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_p11y5"]
+atlas = ExtResource("1_dy6sc")
+region = Rect2(0, 16, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_s5nov"]
+atlas = ExtResource("1_dy6sc")
+region = Rect2(0, 32, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_b3mxk"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nokgg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_b3mxk")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 7.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ubaqv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_p11y5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_s5nov")
+}],
+"loop": true,
+"name": &"jump",
+"speed": 8.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_nokgg"]
+radius = 5.0
+height = 10.0
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1qmh0"]
+size = Vector2(168.44232, 35.75962)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_gfurk"]
+size = Vector2(10, 2)
+
+[node name="mob" type="CharacterBody2D" unique_id=1431857032]
+scale = Vector2(1.3, 1.3)
+collision_layer = 2
+script = ExtResource("1_nokgg")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=60345106]
+sprite_frames = SubResource("SpriteFrames_b3mxk")
+animation = &"jump"
+frame_progress = 0.21385697
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1500654493]
+position = Vector2(0, -1.5192308)
+shape = SubResource("CapsuleShape2D_nokgg")
+
+[node name="Damage" type="Area2D" parent="." unique_id=1586598557]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Damage" unique_id=1758516604]
+position = Vector2(0, -6.1538467)
+shape = SubResource("RectangleShape2D_1qmh0")
+debug_color = Color(0, 0.5988127, 0.70872307, 0.41960785)
+
+[node name="Dead" type="Area2D" parent="." unique_id=1841640975]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Dead" unique_id=1197459224]
+position = Vector2(0, -5)
+shape = SubResource("RectangleShape2D_gfurk")
+debug_color = Color(0.99531406, 0, 0.21528006, 0.41960785)
+
+[node name="JumpTime" type="Timer" parent="." unique_id=1014317677]
+wait_time = 2.0
+one_shot = true
+
+[connection signal="body_entered" from="Damage" to="." method="_on_damage_body_entered"]
+[connection signal="body_entered" from="Dead" to="." method="_on_dead_body_entered"]
+[connection signal="timeout" from="JumpTime" to="." method="_on_jump_time_timeout"]

@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://2nwdt5bxj7h0"]
+
+[ext_resource type="Texture2D" uid="uid://beanx5d3euo52" path="res://backgroud/Pixelart Grasslands/Decor.png" id="1_xg27b"]
+
+[node name="Sprite2D" type="Sprite2D" unique_id=1821869398]
+texture = ExtResource("1_xg27b")
+region_enabled = true
+region_rect = Rect2(34.799946, 39.865208, 35.379658, 48.18031)

@@ -72,7 +72,7 @@ animations = [{
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_pjt0s"]
 
-[node name="CharacterBody2D" type="CharacterBody2D" unique_id=1370263588]
+[node name="Player" type="CharacterBody2D" unique_id=1370263588]
 safe_margin = 0.01
 script = ExtResource("1_pjt0s")
 
@@ -81,7 +81,7 @@ position = Vector2(-1, -18)
 scale = Vector2(1.875, 2)
 sprite_frames = SubResource("SpriteFrames_c1b4b")
 animation = &"walk"
-frame_progress = 0.7679395
+frame_progress = 0.4847487
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1631047225]
 position = Vector2(-1, -0.25)
