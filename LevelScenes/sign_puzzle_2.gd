@@ -11,7 +11,7 @@ func _on_body_entered(body):
 		ui.show()
 
 func _on_answer_input_text_submitted(new_text):
-	if new_text.to_lower() == "4":
+	if new_text.to_lower() == "yellow":
 		if wall:
 			wall.queue_free()
 		collision_shape.set_deferred("disabled", true)
