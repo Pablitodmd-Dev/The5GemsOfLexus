@@ -47,7 +47,8 @@ script = ExtResource("1_jial2")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1091492724]
 sprite_frames = SubResource("SpriteFrames_3pht4")
-frame_progress = 0.75002855
+autoplay = "default"
+frame_progress = 0.6869617
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=710146283]
 scale = Vector2(0.8, 0.8)
