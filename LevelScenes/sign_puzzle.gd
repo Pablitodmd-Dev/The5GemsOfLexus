@@ -1,8 +1,8 @@
 extends Area2D
 
-@onready var ui = $"../CanvasLayer/PuzzleUI"
-@onready var input = $"../CanvasLayer/PuzzleUI/AnswerInput"
-@onready var label = $"../CanvasLayer/PuzzleUI/Label"
+@onready var ui = $"../CanvasLayer2/PuzzleUI"
+@onready var input = $"../CanvasLayer2/PuzzleUI/AnswerInput"
+@onready var label = $"../CanvasLayer2/PuzzleUI/Label"
 @onready var wall = $"../PuzzleWall"
 @onready var collision_shape = $CollisionShape2D
 
