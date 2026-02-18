@@ -313,7 +313,7 @@ debug_color = Color(1, 0, 0, 0.41960785)
 [node name="DeathSound" type="AudioStreamPlayer2D" parent="." unique_id=993450446]
 position = Vector2(0, -1.111103)
 stream = ExtResource("16_r88xs")
-volume_db = 7.0
+volume_db = 4.0
 
 [node name="Area2D" parent="." unique_id=365935490 instance=ExtResource("16_kaao3")]
 position = Vector2(-99.99999, -67.77777)
@@ -378,7 +378,7 @@ offset_bottom = 48.5
 grow_horizontal = 2
 grow_vertical = 2
 
-[connection signal="body_entered" from="SignPuzzle2" to="Player" method="_on_sign_puzzle_2_body_entered"]
 [connection signal="body_entered" from="SignPuzzle2" to="SignPuzzle2" method="_on_body_entered"]
+[connection signal="body_entered" from="SignPuzzle2" to="Player" method="_on_sign_puzzle_2_body_entered"]
 [connection signal="body_entered" from="DeadZone" to="DeadZone" method="_on_body_entered"]
 [connection signal="text_submitted" from="CanvasLayer2/PuzzleUI/AnswerInput" to="SignPuzzle2" method="_on_answer_input_text_submitted"]
