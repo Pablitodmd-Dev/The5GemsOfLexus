@@ -47,7 +47,8 @@ script = ExtResource("1_o820h")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1350037024]
 sprite_frames = SubResource("SpriteFrames_2hor0")
-frame_progress = 0.078653894
+autoplay = "default"
+frame_progress = 0.10745376
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=482334347]
 scale = Vector2(0.8, 0.8)
