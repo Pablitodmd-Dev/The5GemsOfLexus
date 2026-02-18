@@ -40,13 +40,14 @@ animations = [{
 }]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_fy4av"]
+radius = 8.0
 
 [node name="Area2D" type="Area2D" unique_id=931215498]
 script = ExtResource("1_lofqq")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=827748001]
 sprite_frames = SubResource("SpriteFrames_8dm78")
-frame_progress = 0.2764436
+frame_progress = 0.6825701
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=966196215]
 scale = Vector2(0.8, 0.8)
