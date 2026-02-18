@@ -82,4 +82,4 @@ Este proyecto es de código abierto para fines educativos y de entretenimiento.
 This project is open-source for educational and entertainment purposes.
 
 ---
-**Desarrollado con pasión por [Tu Nombre/Usuario]** 🚀
+**Desarrollado con pasión por Pablodmd** 🚀
