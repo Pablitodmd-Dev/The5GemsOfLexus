@@ -1,0 +1,95 @@
+[gd_scene format=3 uid="uid://baisigkso2eim"]
+
+[ext_resource type="FontFile" uid="uid://b0ai4gifom2bp" path="res://fonts/Fontzilla Comic.ttf" id="1_fqpyq"]
+[ext_resource type="Script" uid="uid://dugvddal1csp6" path="res://LevelScenes/pause_menu.gd" id="1_l0xms"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_u0yx1"]
+bg_color = Color(0.38652596, 0.6828073, 0.37736964, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.05995079, 0.16115724, 0, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_fqpyq"]
+bg_color = Color(0.75050116, 0, 0.16255647, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.3882353, 0, 0.07058824, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[node name="CanvasLayer" type="CanvasLayer" unique_id=288063568]
+process_mode = 3
+script = ExtResource("1_l0xms")
+
+[node name="Background" type="ColorRect" parent="." unique_id=939269514]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.5882353)
+
+[node name="Label" type="Label" parent="." unique_id=1624445571]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -104.0
+offset_top = -156.5
+offset_right = 104.0
+offset_bottom = -87.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("1_fqpyq")
+theme_override_font_sizes/font_size = 68
+text = "PAUSE"
+
+[node name="CenterContainer" type="CenterContainer" parent="." unique_id=2109282049]
+custom_minimum_size = Vector2(250, 50)
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -200.0
+offset_top = -66.0
+offset_right = 200.0
+offset_bottom = 174.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer" unique_id=1544106634]
+layout_mode = 2
+theme_override_constants/separation = 40
+
+[node name="ResumeButton" type="Button" parent="CenterContainer/VBoxContainer" unique_id=1394196870]
+custom_minimum_size = Vector2(400, 100)
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_fonts/font = ExtResource("1_fqpyq")
+theme_override_font_sizes/font_size = 40
+theme_override_styles/normal = SubResource("StyleBoxFlat_u0yx1")
+text = "RESUME"
+
+[node name="QuitButton" type="Button" parent="CenterContainer/VBoxContainer" unique_id=771344685]
+custom_minimum_size = Vector2(400, 100)
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_fonts/font = ExtResource("1_fqpyq")
+theme_override_font_sizes/font_size = 40
+theme_override_styles/normal = SubResource("StyleBoxFlat_fqpyq")
+text = "QUIT"
+
+[connection signal="pressed" from="CenterContainer/VBoxContainer/ResumeButton" to="." method="_on_resume_button_pressed"]
+[connection signal="pressed" from="CenterContainer/VBoxContainer/QuitButton" to="." method="_on_quit_button_pressed"]
