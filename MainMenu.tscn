@@ -119,7 +119,7 @@ theme_override_font_sizes/font_size = 60
 theme_override_styles/normal = SubResource("StyleBoxFlat_u4d8l")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_uoqt2")
 theme_override_styles/hover = SubResource("StyleBoxFlat_a4owy")
-text = "OPTIONS"
+text = "CONTROLS"
 
 [connection signal="pressed" from="Control/MarginContainer/VBoxContainer/VBoxContainer/Play" to="Control" method="_on_play_pressed"]
 [connection signal="pressed" from="Control/MarginContainer/VBoxContainer/VBoxContainer/Options" to="Control" method="_on_options_pressed"]

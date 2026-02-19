@@ -4,6 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://b2i2jle0ate5o" path="res://BotonSuelo.tres" id="2_vomi7"]
 [ext_resource type="Script" uid="uid://cjwtik6g0mtah" path="res://level_select.gd" id="2_wevku"]
 [ext_resource type="AudioStream" uid="uid://cg8lb6e4u4gaf" path="res://Music/world select.mp3" id="4_apu6u"]
+[ext_resource type="Texture2D" uid="uid://cjxahe8rxnjvb" path="res://Assets/buttonAssets.png" id="4_bv7n5"]
 
 [node name="LevelSelect" type="Control" unique_id=1483345205]
 layout_mode = 3
@@ -27,7 +28,8 @@ offset_top = 105.68981
 offset_right = 86.25002
 offset_bottom = 141.87192
 texture_normal = ExtResource("2_vomi7")
-texture_hover = ExtResource("2_vomi7")
+texture_hover = ExtResource("4_bv7n5")
+texture_focused = ExtResource("4_bv7n5")
 ignore_texture_size = true
 stretch_mode = 0
 
@@ -47,6 +49,8 @@ offset_top = 42.847233
 offset_right = -142.50003
 offset_bottom = 78.07718
 texture_normal = ExtResource("2_vomi7")
+texture_hover = ExtResource("4_bv7n5")
+texture_focused = ExtResource("4_bv7n5")
 ignore_texture_size = true
 stretch_mode = 0
 
@@ -66,6 +70,8 @@ offset_top = -15.23455
 offset_right = 165.00003
 offset_bottom = 19.995361
 texture_normal = ExtResource("2_vomi7")
+texture_hover = ExtResource("4_bv7n5")
+texture_focused = ExtResource("4_bv7n5")
 ignore_texture_size = true
 stretch_mode = 0
 
@@ -85,6 +91,8 @@ offset_top = -18.091045
 offset_right = -130.31253
 offset_bottom = 18.091057
 texture_normal = ExtResource("2_vomi7")
+texture_hover = ExtResource("4_bv7n5")
+texture_focused = ExtResource("4_bv7n5")
 ignore_texture_size = true
 stretch_mode = 0
 
@@ -104,6 +112,8 @@ offset_top = 38.08642
 offset_right = 222.18756
 offset_bottom = 71.41204
 texture_normal = ExtResource("2_vomi7")
+texture_hover = ExtResource("4_bv7n5")
+texture_focused = ExtResource("4_bv7n5")
 ignore_texture_size = true
 stretch_mode = 0
 
@@ -123,6 +133,8 @@ offset_top = 68.55555
 offset_right = 138.75003
 offset_bottom = 102.83332
 texture_normal = ExtResource("2_vomi7")
+texture_hover = ExtResource("4_bv7n5")
+texture_focused = ExtResource("4_bv7n5")
 ignore_texture_size = true
 stretch_mode = 0
 
