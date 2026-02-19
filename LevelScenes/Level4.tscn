@@ -15,12 +15,12 @@
 [ext_resource type="Texture2D" uid="uid://cs80jwhfqb2f5" path="res://Assets/Top Down Lava Tileset 16x16 Free/Top Down Lava Tileset 16x16 Free/FREE TILESET FILES/PROPS ( With Animations )/Torch ( No Light )/torch3.png" id="11_3qwrg"]
 [ext_resource type="PackedScene" uid="uid://cfk3oxqktjyok" path="res://player.tscn" id="12_3qwrg"]
 [ext_resource type="Texture2D" uid="uid://yt7lg8l6fuww" path="res://Assets/Top Down Lava Tileset 16x16 Free/Top Down Lava Tileset 16x16 Free/FREE TILESET FILES/PROPS ( With Animations )/Torch ( No Light )/torch4.png" id="12_h8ews"]
-[ext_resource type="AudioStream" uid="uid://das8w0xv21d3t" path="res://DK Island Swing Returns - Donkey Kong Country Returns [OST] [dmMbAaumSKk](1).mp3" id="13_h8ews"]
 [ext_resource type="Texture2D" uid="uid://bm0piaecf3fcx" path="res://Assets/Top Down Lava Tileset 16x16 Free/Top Down Lava Tileset 16x16 Free/FREE TILESET FILES/PROPS ( With Animations )/Torch ( No Light )/torch5.png" id="13_ljhlu"]
 [ext_resource type="Texture2D" uid="uid://d1g810xpde4bf" path="res://Assets/Top Down Lava Tileset 16x16 Free/Top Down Lava Tileset 16x16 Free/FREE TILESET FILES/PROPS ( With Animations )/Torch ( No Light )/torch6.png" id="14_1bb7p"]
 [ext_resource type="Script" uid="uid://d01l8o7jxity5" path="res://LevelScenes/dead_zone.gd" id="15_1bb7p"]
 [ext_resource type="Texture2D" uid="uid://dwm53gpl6rfp" path="res://Assets/Top Down Lava Tileset 16x16 Free/Top Down Lava Tileset 16x16 Free/FREE TILESET FILES/PROPS ( With Animations )/Torch ( No Light )/torch7.png" id="15_2fih1"]
-[ext_resource type="AudioStream" uid="uid://d1kbmt21e4fv1" path="res://Jingle (Death) - New Super Mario Bros U - Music [C93w-lyqz_Y].mp3" id="16_2fih1"]
+[ext_resource type="AudioStream" uid="uid://d1kbmt21e4fv1" path="res://Music/Jingle (Death) - New Super Mario Bros U - Music [C93w-lyqz_Y].mp3" id="16_2fih1"]
+[ext_resource type="AudioStream" uid="uid://y522ngnruoyj" path="res://Music/New Super Mario Bros - Lava Theme (Remix) [EVX1qjIzMUI].mp3" id="16_ilvjn"]
 [ext_resource type="PackedScene" uid="uid://ua700av3hr7v" path="res://GemRed.tscn" id="17_ylq8y"]
 [ext_resource type="PackedScene" uid="uid://baisigkso2eim" path="res://pause_menu.tscn" id="24_ilvjn"]
 [ext_resource type="PackedScene" uid="uid://cpkv8rixpxwsd" path="res://spikes.tscn" id="25_ced8f"]
@@ -292,7 +292,7 @@ scale = Vector2(0.70000017, 0.7)
 [node name="MusicNode" type="AudioStreamPlayer2D" parent="Player" unique_id=1321850157]
 position = Vector2(193.65074, -80.95241)
 scale = Vector2(1.4285713, 1.4285713)
-stream = ExtResource("13_h8ews")
+stream = ExtResource("16_ilvjn")
 volume_db = -10.0
 autoplay = true
 

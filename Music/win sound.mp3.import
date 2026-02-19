@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bijlawg7enpee"
+path="res://.godot/imported/win sound.mp3-899f0ec57aea90f4ae0f6d694f9aae81.mp3str"
+
+[deps]
+
+source_file="res://Music/win sound.mp3"
+dest_files=["res://.godot/imported/win sound.mp3-899f0ec57aea90f4ae0f6d694f9aae81.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
