@@ -48,8 +48,10 @@ script = ExtResource("1_2uo8f")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=243325412]
 sprite_frames = SubResource("SpriteFrames_uivno")
 autoplay = "default"
-frame_progress = 0.72621506
+frame_progress = 0.7020758
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1532282493]
 scale = Vector2(0.8, 0.8)
 shape = SubResource("CircleShape2D_d2bxp")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

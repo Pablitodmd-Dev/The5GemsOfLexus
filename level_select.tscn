@@ -22,110 +22,116 @@ texture = ExtResource("1_il3u1")
 
 [node name="Level1Button" type="TextureButton" parent="." unique_id=204370629]
 layout_mode = 0
-offset_left = 45.000023
-offset_top = 125.68518
-offset_right = 67.50002
-offset_bottom = 148.53702
+offset_left = 48.750023
+offset_top = 105.68981
+offset_right = 86.25002
+offset_bottom = 141.87192
 texture_normal = ExtResource("2_vomi7")
 ignore_texture_size = true
 stretch_mode = 0
 
 [node name="Label" type="Label" parent="Level1Button" unique_id=1574264873]
 layout_mode = 0
-offset_left = 6.562502
-offset_top = -1.9043274
-offset_right = 16.562502
-offset_bottom = 21.095673
+offset_left = 11.250004
+offset_top = -3.808648
+offset_right = 27.250004
+offset_bottom = 35.191353
+theme_override_font_sizes/font_size = 28
 text = "1"
 
 [node name="Level2Button" type="TextureButton" parent="." unique_id=1136729790]
 layout_mode = 0
-offset_left = -180.00003
-offset_top = 49.51234
-offset_right = -157.50003
-offset_bottom = 72.36418
+offset_left = -178.12503
+offset_top = 42.847233
+offset_right = -142.50003
+offset_bottom = 78.07718
 texture_normal = ExtResource("2_vomi7")
 ignore_texture_size = true
 stretch_mode = 0
 
 [node name="Label" type="Label" parent="Level2Button" unique_id=1294785595]
 layout_mode = 0
-offset_left = 6.562502
-offset_top = -1.9043274
-offset_right = 16.562502
-offset_bottom = 21.095673
+offset_left = 10.312502
+offset_top = -3.8086605
+offset_right = 26.312502
+offset_bottom = 35.191338
+theme_override_font_sizes/font_size = 28
 text = "2"
 
 [node name="Level3Button" type="TextureButton" parent="." unique_id=749270924]
 layout_mode = 0
-offset_left = 135.00003
-offset_top = -11.425934
-offset_right = 157.50003
-offset_bottom = 11.425903
+offset_left = 129.37503
+offset_top = -15.23455
+offset_right = 165.00003
+offset_bottom = 19.995361
 texture_normal = ExtResource("2_vomi7")
 ignore_texture_size = true
 stretch_mode = 0
 
 [node name="Label" type="Label" parent="Level3Button" unique_id=362688436]
 layout_mode = 0
-offset_left = 6.562502
-offset_top = -1.9043274
-offset_right = 16.562502
-offset_bottom = 21.095673
+offset_left = 11.250004
+offset_top = -3.8086772
+offset_right = 27.250004
+offset_bottom = 35.191322
+theme_override_font_sizes/font_size = 28
 text = "3"
 
 [node name="Level4Button" type="TextureButton" parent="." unique_id=352948093]
 layout_mode = 0
-offset_left = -150.0
-offset_top = -11.425934
-offset_right = -127.5
-offset_bottom = 11.425903
+offset_left = -165.93753
+offset_top = -18.091045
+offset_right = -130.31253
+offset_bottom = 18.091057
 texture_normal = ExtResource("2_vomi7")
 ignore_texture_size = true
 stretch_mode = 0
 
 [node name="Label" type="Label" parent="Level4Button" unique_id=389705053]
 layout_mode = 0
-offset_left = 6.562502
-offset_top = -1.9043274
-offset_right = 16.562502
-offset_bottom = 21.095673
+offset_left = 9.375002
+offset_top = -3.808648
+offset_right = 25.375002
+offset_bottom = 35.191353
+theme_override_font_sizes/font_size = 28
 text = "4"
 
 [node name="Level5Button" type="TextureButton" parent="." unique_id=1037166450]
 layout_mode = 0
-offset_left = 202.50006
-offset_top = 41.895058
-offset_right = 225.00006
-offset_bottom = 64.746895
+offset_left = 188.43756
+offset_top = 38.08642
+offset_right = 222.18756
+offset_bottom = 71.41204
 texture_normal = ExtResource("2_vomi7")
 ignore_texture_size = true
 stretch_mode = 0
 
 [node name="Label" type="Label" parent="Level5Button" unique_id=1792442924]
 layout_mode = 0
-offset_left = 6.562502
-offset_top = -1.9043274
-offset_right = 16.562502
-offset_bottom = 21.095673
+offset_left = 10.312504
+offset_top = -4.760809
+offset_right = 26.312504
+offset_bottom = 34.23919
+theme_override_font_sizes/font_size = 28
 text = "5"
 
 [node name="Level6Button" type="TextureButton" parent="." unique_id=610217101]
 layout_mode = 0
-offset_left = 97.50003
-offset_top = 79.981476
-offset_right = 120.00003
-offset_bottom = 102.83331
+offset_left = 102.18753
+offset_top = 68.55555
+offset_right = 138.75003
+offset_bottom = 102.83332
 texture_normal = ExtResource("2_vomi7")
 ignore_texture_size = true
 stretch_mode = 0
 
 [node name="Label" type="Label" parent="Level6Button" unique_id=374713992]
 layout_mode = 0
-offset_left = 6.562502
-offset_top = -1.9043274
-offset_right = 16.562502
-offset_bottom = 21.095673
+offset_left = 10.312504
+offset_top = -3.8086557
+offset_right = 26.312504
+offset_bottom = 35.191345
+theme_override_font_sizes/font_size = 28
 text = "6"
 
 [node name="MusicaFondo" type="AudioStreamPlayer2D" parent="." unique_id=1446173466]
