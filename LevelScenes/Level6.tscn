@@ -37,6 +37,7 @@
 [ext_resource type="Script" uid="uid://djdb7ilnhrwkr" path="res://LevelScenes/music_fade_zone.gd" id="34_jbeys"]
 [ext_resource type="Script" uid="uid://h3m74fthxp4c" path="res://LevelScenes/music_start_zone.gd" id="36_eww4s"]
 [ext_resource type="AudioStream" uid="uid://cdx0rfyc0wh5i" path="res://sparkles sfx.mp3" id="37_t7h7j"]
+[ext_resource type="PackedScene" uid="uid://baisigkso2eim" path="res://pause_menu.tscn" id="38_t7h7j"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_eupbr"]
 texture = ExtResource("10_gyxjm")
@@ -1536,7 +1537,7 @@ tile_map_data = PackedByteArray("AAD2/wEAAwALAAsAAAD2/wIAAwALAAwAAAD3/wEAAwAMAAs
 tile_set = SubResource("TileSet_ulhx2")
 
 [node name="Player" parent="." unique_id=1370263588 instance=ExtResource("12_lwc36")]
-position = Vector2(2488.8884, -12.22221)
+position = Vector2(2853.333, 65.55557)
 scale = Vector2(0.7, 0.7)
 
 [node name="MusicNode" type="AudioStreamPlayer2D" parent="Player" unique_id=1321850157]
@@ -1792,7 +1793,7 @@ script = ExtResource("19_4b0d4")
 position = Vector2(462.22217, -61.111107)
 sprite_frames = SubResource("SpriteFrames_4b0d4")
 autoplay = "default"
-frame_progress = 0.07339309
+frame_progress = 0.42578927
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="GreenGem" unique_id=27726911]
 position = Vector2(462.2222, -60.55555)
@@ -1811,7 +1812,7 @@ script = ExtResource("22_fdcok")
 position = Vector2(737.7777, -61.11111)
 sprite_frames = SubResource("SpriteFrames_gtjb1")
 autoplay = "default"
-frame_progress = 0.3944559
+frame_progress = 0.7468508
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="BlueGem" unique_id=1004707405]
 position = Vector2(737.7777, -60.55555)
@@ -1830,7 +1831,7 @@ position = Vector2(1482.222, -61.555553)
 scale = Vector2(1, 1.0555553)
 sprite_frames = SubResource("SpriteFrames_6getb")
 autoplay = "default"
-frame_progress = 0.17159124
+frame_progress = 0.5239863
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="YellowGem" unique_id=1881137624]
 position = Vector2(1482.2222, -61.11111)
@@ -1960,7 +1961,7 @@ script = ExtResource("30_fe32w")
 position = Vector2(2436.8887, -64.22221)
 sprite_frames = SubResource("SpriteFrames_1gxbv")
 autoplay = "default"
-frame_progress = 0.17111833
+frame_progress = 0.5235133
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="PurpleGem" unique_id=1544060387]
 position = Vector2(2436.8887, -64.2222)
@@ -1979,6 +1980,7 @@ script = ExtResource("32_ud61l")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="FinalGem" unique_id=1964107318]
 position = Vector2(3176.8887, -17.555573)
 sprite_frames = SubResource("SpriteFrames_o7vjw")
+frame_progress = 0.819875
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="FinalGem" unique_id=89141352]
 position = Vector2(3176.6108, -17.277786)
@@ -2010,6 +2012,8 @@ debug_color = Color(2.117753e-06, 0.6437607, 0.2997936, 0.41960785)
 [node name="TriggerSound" type="AudioStreamPlayer2D" parent="MusicStartZone" unique_id=423570715]
 position = Vector2(2901.1108, 7.7777863)
 stream = ExtResource("37_t7h7j")
+
+[node name="CanvasLayer2" parent="." unique_id=288063568 instance=ExtResource("38_t7h7j")]
 
 [connection signal="body_entered" from="Sign" to="Sign" method="_on_body_entered"]
 [connection signal="body_exited" from="Sign" to="Sign" method="_on_body_exited"]

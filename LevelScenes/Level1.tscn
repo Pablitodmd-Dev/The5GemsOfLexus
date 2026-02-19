@@ -18,6 +18,7 @@
 [ext_resource type="Script" uid="uid://d01l8o7jxity5" path="res://LevelScenes/dead_zone.gd" id="15_ax4po"]
 [ext_resource type="AudioStream" uid="uid://d1kbmt21e4fv1" path="res://Jingle (Death) - New Super Mario Bros U - Music [C93w-lyqz_Y].mp3" id="16_bim6h"]
 [ext_resource type="PackedScene" uid="uid://bow1e8g8dun8x" path="res://GemGreen.tscn" id="17_ov46y"]
+[ext_resource type="PackedScene" uid="uid://baisigkso2eim" path="res://pause_menu.tscn" id="19_d8pfu"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_d8pfu"]
 texture = ExtResource("10_qdnis")
@@ -264,5 +265,8 @@ volume_db = -10.0
 
 [node name="Area2D" parent="." unique_id=1662932280 instance=ExtResource("17_ov46y")]
 position = Vector2(639.99994, 32.222237)
+
+[node name="CanvasLayer2" parent="." unique_id=288063568 instance=ExtResource("19_d8pfu")]
+visible = false
 
 [connection signal="body_entered" from="DeadZone" to="DeadZone" method="_on_body_entered"]

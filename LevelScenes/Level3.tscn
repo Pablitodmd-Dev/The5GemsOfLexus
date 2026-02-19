@@ -23,6 +23,7 @@
 [ext_resource type="FontFile" uid="uid://b0ai4gifom2bp" path="res://fonts/Fontzilla Comic.ttf" id="19_4sgyc"]
 [ext_resource type="Script" uid="uid://slowfvjli15u" path="res://LevelScenes/sign_puzzle_2.gd" id="20_x7rr0"]
 [ext_resource type="Texture2D" uid="uid://brfw7wa6agm5v" path="res://signassets/Game World Assets/objects/1.png" id="21_kacpm"]
+[ext_resource type="PackedScene" uid="uid://baisigkso2eim" path="res://pause_menu.tscn" id="24_kacpm"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_x7rr0"]
 texture = ExtResource("10_ug6u1")
@@ -377,6 +378,9 @@ offset_right = 66.25
 offset_bottom = 48.5
 grow_horizontal = 2
 grow_vertical = 2
+
+[node name="CanvasLayer3" parent="." unique_id=288063568 instance=ExtResource("24_kacpm")]
+visible = false
 
 [connection signal="body_entered" from="SignPuzzle2" to="SignPuzzle2" method="_on_body_entered"]
 [connection signal="body_entered" from="SignPuzzle2" to="Player" method="_on_sign_puzzle_2_body_entered"]

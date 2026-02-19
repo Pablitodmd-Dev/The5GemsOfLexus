@@ -24,6 +24,7 @@
 [ext_resource type="Texture2D" uid="uid://bm0piaecf3fcx" path="res://Assets/Top Down Lava Tileset 16x16 Free/Top Down Lava Tileset 16x16 Free/FREE TILESET FILES/PROPS ( With Animations )/Torch ( No Light )/torch5.png" id="21_pwbjt"]
 [ext_resource type="Texture2D" uid="uid://d1g810xpde4bf" path="res://Assets/Top Down Lava Tileset 16x16 Free/Top Down Lava Tileset 16x16 Free/FREE TILESET FILES/PROPS ( With Animations )/Torch ( No Light )/torch6.png" id="22_qwtxf"]
 [ext_resource type="Texture2D" uid="uid://dwm53gpl6rfp" path="res://Assets/Top Down Lava Tileset 16x16 Free/Top Down Lava Tileset 16x16 Free/FREE TILESET FILES/PROPS ( With Animations )/Torch ( No Light )/torch7.png" id="23_pvbrv"]
+[ext_resource type="PackedScene" uid="uid://baisigkso2eim" path="res://pause_menu.tscn" id="25_a8m2a"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_7xi30"]
 texture = ExtResource("5_pwrxp")
@@ -440,5 +441,8 @@ position = Vector2(624.44434, -73.33333)
 
 [node name="CanvasModulate" type="CanvasModulate" parent="." unique_id=1665358449]
 color = Color(0, 0, 0, 1)
+
+[node name="CanvasLayer2" parent="." unique_id=288063568 instance=ExtResource("25_a8m2a")]
+visible = false
 
 [connection signal="body_entered" from="DeadZone" to="DeadZone" method="_on_body_entered"]
