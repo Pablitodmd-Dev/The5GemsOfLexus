@@ -22,6 +22,7 @@
 [ext_resource type="AudioStream" uid="uid://d1kbmt21e4fv1" path="res://Jingle (Death) - New Super Mario Bros U - Music [C93w-lyqz_Y].mp3" id="16_7kurs"]
 [ext_resource type="PackedScene" uid="uid://mvmsowbouyyi" path="res://GemBlue.tscn" id="17_gdqo4"]
 [ext_resource type="Texture2D" uid="uid://d025ncwbbcyiq" path="res://2d-decoration-pack/Spritesheets/Nature_props_01.png" id="19_4l1eq"]
+[ext_resource type="PackedScene" uid="uid://baisigkso2eim" path="res://pause_menu.tscn" id="23_ssmlh"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ek4df"]
 texture = ExtResource("11_ek4df")
@@ -402,6 +403,9 @@ offset_right = 66.25
 offset_bottom = 48.5
 grow_horizontal = 2
 grow_vertical = 2
+
+[node name="CanvasLayer3" parent="." unique_id=288063568 instance=ExtResource("23_ssmlh")]
+visible = false
 
 [connection signal="body_entered" from="SignPuzzle" to="SignPuzzle" method="_on_body_entered"]
 [connection signal="body_entered" from="DeadZone" to="DeadZone" method="_on_body_entered"]
