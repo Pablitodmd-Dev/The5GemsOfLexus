@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://baisigkso2eim"]
 
-[ext_resource type="FontFile" uid="uid://b0ai4gifom2bp" path="res://fonts/Fontzilla Comic.ttf" id="1_fqpyq"]
-[ext_resource type="Script" uid="uid://dugvddal1csp6" path="res://LevelScenes/pause_menu.gd" id="1_l0xms"]
+[ext_resource type="Script" uid="uid://dugvddal1csp6" path="res://pause_menu.gd" id="1_nwcfo"]
+[ext_resource type="FontFile" uid="uid://b0ai4gifom2bp" path="res://fonts/Fontzilla Comic.ttf" id="2_05uyy"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_u0yx1"]
 bg_color = Color(0.38652596, 0.6828073, 0.37736964, 1)
@@ -29,7 +29,7 @@ corner_radius_bottom_left = 20
 
 [node name="CanvasLayer" type="CanvasLayer" unique_id=288063568]
 process_mode = 3
-script = ExtResource("1_l0xms")
+script = ExtResource("1_nwcfo")
 
 [node name="Background" type="ColorRect" parent="." unique_id=939269514]
 anchors_preset = 15
@@ -51,7 +51,7 @@ offset_right = 104.0
 offset_bottom = -87.5
 grow_horizontal = 2
 grow_vertical = 2
-theme_override_fonts/font = ExtResource("1_fqpyq")
+theme_override_fonts/font = ExtResource("2_05uyy")
 theme_override_font_sizes/font_size = 68
 text = "PAUSE"
 
@@ -77,7 +77,7 @@ theme_override_constants/separation = 40
 custom_minimum_size = Vector2(400, 100)
 layout_mode = 2
 size_flags_horizontal = 4
-theme_override_fonts/font = ExtResource("1_fqpyq")
+theme_override_fonts/font = ExtResource("2_05uyy")
 theme_override_font_sizes/font_size = 40
 theme_override_styles/normal = SubResource("StyleBoxFlat_u0yx1")
 text = "RESUME"
@@ -86,7 +86,7 @@ text = "RESUME"
 custom_minimum_size = Vector2(400, 100)
 layout_mode = 2
 size_flags_horizontal = 4
-theme_override_fonts/font = ExtResource("1_fqpyq")
+theme_override_fonts/font = ExtResource("2_05uyy")
 theme_override_font_sizes/font_size = 40
 theme_override_styles/normal = SubResource("StyleBoxFlat_fqpyq")
 text = "QUIT"

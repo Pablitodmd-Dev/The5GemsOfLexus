@@ -6,13 +6,10 @@ func _on_body_entered(body):
 	if body.name == "Player":
 		if collect_sound:
 			collect_sound.play()
-
 		visible = false
 		monitoring = false 
-
 		var wall = get_parent().get_node_or_null("Wall2")
 		if wall:
 			wall.queue_free()
-
 		await collect_sound.finished
 		queue_free()
