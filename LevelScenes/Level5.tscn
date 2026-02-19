@@ -11,12 +11,12 @@
 [ext_resource type="Texture2D" uid="uid://bj35rxah4uty5" path="res://backgroud/Pixelart Grasslands/GrassTiles.png" id="11_pwbjt"]
 [ext_resource type="PackedScene" uid="uid://cfk3oxqktjyok" path="res://player.tscn" id="12_qwtxf"]
 [ext_resource type="Texture2D" uid="uid://b6t0034vaqq56" path="res://white_light.png" id="12_qxxtk"]
-[ext_resource type="AudioStream" uid="uid://das8w0xv21d3t" path="res://DK Island Swing Returns - Donkey Kong Country Returns [OST] [dmMbAaumSKk](1).mp3" id="13_pvbrv"]
 [ext_resource type="PackedScene" uid="uid://vl4200beymb7" path="res://mob.tscn" id="14_dppt3"]
 [ext_resource type="Script" uid="uid://d01l8o7jxity5" path="res://LevelScenes/dead_zone.gd" id="15_qf5iu"]
-[ext_resource type="AudioStream" uid="uid://d1kbmt21e4fv1" path="res://Jingle (Death) - New Super Mario Bros U - Music [C93w-lyqz_Y].mp3" id="16_dwptu"]
+[ext_resource type="AudioStream" uid="uid://d1kbmt21e4fv1" path="res://Music/Jingle (Death) - New Super Mario Bros U - Music [C93w-lyqz_Y].mp3" id="16_dwptu"]
 [ext_resource type="Texture2D" uid="uid://xhtasbdteyj2" path="res://Assets/Top Down Lava Tileset 16x16 Free/Top Down Lava Tileset 16x16 Free/FREE TILESET FILES/PROPS ( With Animations )/Torch ( No Light )/torch1.png" id="17_nqh81"]
 [ext_resource type="Texture2D" uid="uid://ca2tl8i7nka7p" path="res://Assets/Top Down Lava Tileset 16x16 Free/Top Down Lava Tileset 16x16 Free/FREE TILESET FILES/PROPS ( With Animations )/Torch ( No Light )/torch2.png" id="18_qxxtk"]
+[ext_resource type="AudioStream" uid="uid://dqgtnxqvde78j" path="res://Music/cave-level.mp3" id="19_01hru"]
 [ext_resource type="Texture2D" uid="uid://cs80jwhfqb2f5" path="res://Assets/Top Down Lava Tileset 16x16 Free/Top Down Lava Tileset 16x16 Free/FREE TILESET FILES/PROPS ( With Animations )/Torch ( No Light )/torch3.png" id="19_a8m2a"]
 [ext_resource type="PackedScene" uid="uid://cpkv8rixpxwsd" path="res://spikes.tscn" id="19_dgkh3"]
 [ext_resource type="PackedScene" uid="uid://dew5o50vfjkf6" path="res://GemPurple.tscn" id="19_fdc8r"]
@@ -392,8 +392,8 @@ scale = Vector2(0.7, 0.7)
 [node name="MusicNode" type="AudioStreamPlayer2D" parent="Player" unique_id=1321850157]
 position = Vector2(193.65074, -80.95241)
 scale = Vector2(1.4285713, 1.4285713)
-stream = ExtResource("13_pvbrv")
-volume_db = -10.0
+stream = ExtResource("19_01hru")
+volume_db = -5.0
 autoplay = true
 
 [node name="PointLight2D" type="PointLight2D" parent="Player" unique_id=1097210907]

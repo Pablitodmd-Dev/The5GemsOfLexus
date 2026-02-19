@@ -13,15 +13,15 @@
 [ext_resource type="Texture2D" uid="uid://cb6q48pwtjy81" path="res://Assets/tile_set_castle.png" id="11_4b0d4"]
 [ext_resource type="Texture2D" uid="uid://bj35rxah4uty5" path="res://backgroud/Pixelart Grasslands/GrassTiles.png" id="11_w4vit"]
 [ext_resource type="PackedScene" uid="uid://cfk3oxqktjyok" path="res://player.tscn" id="12_lwc36"]
-[ext_resource type="AudioStream" uid="uid://das8w0xv21d3t" path="res://DK Island Swing Returns - Donkey Kong Country Returns [OST] [dmMbAaumSKk](1).mp3" id="13_gtjb1"]
 [ext_resource type="PackedScene" uid="uid://vl4200beymb7" path="res://mob.tscn" id="14_p4ajv"]
+[ext_resource type="AudioStream" uid="uid://1mp1gi8a4cok" path="res://Music/castle theme.mp3" id="14_t7h7j"]
 [ext_resource type="Script" uid="uid://d01l8o7jxity5" path="res://LevelScenes/dead_zone.gd" id="15_fe32w"]
-[ext_resource type="AudioStream" uid="uid://d1kbmt21e4fv1" path="res://Jingle (Death) - New Super Mario Bros U - Music [C93w-lyqz_Y].mp3" id="16_d7sde"]
+[ext_resource type="AudioStream" uid="uid://d1kbmt21e4fv1" path="res://Music/Jingle (Death) - New Super Mario Bros U - Music [C93w-lyqz_Y].mp3" id="16_d7sde"]
 [ext_resource type="PackedScene" uid="uid://cpkv8rixpxwsd" path="res://spikes.tscn" id="17_tdgf4"]
 [ext_resource type="Texture2D" uid="uid://d025ncwbbcyiq" path="res://2d-decoration-pack/Spritesheets/Nature_props_01.png" id="18_tdgf4"]
 [ext_resource type="Script" uid="uid://tgtuxhib7qtd" path="res://LevelScenes/GreenGemFinalLevel.gd" id="19_4b0d4"]
 [ext_resource type="Texture2D" uid="uid://cc4wj1vrps7yn" path="res://Coin_Gems/spr_coin_strip4.png" id="19_gyxjm"]
-[ext_resource type="AudioStream" uid="uid://btarpiyi15ndu" path="res://Zelda Rupee - Sound effects HD _ sfx _ No copyright ( download Link ) [rEKZ2BQDEzw].mp3" id="21_ksjty"]
+[ext_resource type="AudioStream" uid="uid://btarpiyi15ndu" path="res://Music/soundGem.mp3" id="21_ksjty"]
 [ext_resource type="Script" uid="uid://copj73arxtcmg" path="res://LevelScenes/BlueGemFinalLevel.gd" id="22_fdcok"]
 [ext_resource type="Texture2D" uid="uid://dsp6ddq6d4o6b" path="res://Coin_Gems/spr_coin_azu.png" id="23_qypv1"]
 [ext_resource type="Script" uid="uid://by1aukmmkd8h5" path="res://LevelScenes/YellowGemFinalLevel.gd" id="24_4fknl"]
@@ -33,10 +33,10 @@
 [ext_resource type="Texture2D" uid="uid://csn5jrow81fol" path="res://Coin_Gems/spr_coin_pur.png" id="30_p4ajv"]
 [ext_resource type="Texture2D" uid="uid://b5wo3ywevtugb" path="res://Coin_Gems/spr_coin_gri.png" id="32_6getb"]
 [ext_resource type="Script" uid="uid://cun1ofeaak0i4" path="res://LevelScenes/FinalGem.gd" id="32_ud61l"]
-[ext_resource type="AudioStream" uid="uid://bijlawg7enpee" path="res://win sound.mp3" id="33_jbeys"]
+[ext_resource type="AudioStream" uid="uid://bijlawg7enpee" path="res://Music/win sound.mp3" id="33_jbeys"]
 [ext_resource type="Script" uid="uid://djdb7ilnhrwkr" path="res://LevelScenes/music_fade_zone.gd" id="34_jbeys"]
 [ext_resource type="Script" uid="uid://h3m74fthxp4c" path="res://LevelScenes/music_start_zone.gd" id="36_eww4s"]
-[ext_resource type="AudioStream" uid="uid://cdx0rfyc0wh5i" path="res://sparkles sfx.mp3" id="37_t7h7j"]
+[ext_resource type="AudioStream" uid="uid://cdx0rfyc0wh5i" path="res://Music/sparkles sfx.mp3" id="37_t7h7j"]
 [ext_resource type="PackedScene" uid="uid://baisigkso2eim" path="res://pause_menu.tscn" id="38_t7h7j"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_eupbr"]
@@ -1297,6 +1297,7 @@ tracks/0/keys = {
 [sub_resource type="Animation" id="Animation_gtjb1"]
 resource_name = "up_down"
 length = 6.0
+loop_mode = 1
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -1537,13 +1538,13 @@ tile_map_data = PackedByteArray("AAD2/wEAAwALAAsAAAD2/wIAAwALAAwAAAD3/wEAAwAMAAs
 tile_set = SubResource("TileSet_ulhx2")
 
 [node name="Player" parent="." unique_id=1370263588 instance=ExtResource("12_lwc36")]
-position = Vector2(2853.333, 65.55557)
+position = Vector2(-131.11084, 5.5555687)
 scale = Vector2(0.7, 0.7)
 
 [node name="MusicNode" type="AudioStreamPlayer2D" parent="Player" unique_id=1321850157]
 position = Vector2(193.65074, -80.95241)
 scale = Vector2(1.4285713, 1.4285713)
-stream = ExtResource("13_gtjb1")
+stream = ExtResource("14_t7h7j")
 volume_db = -10.0
 autoplay = true
 
@@ -1793,7 +1794,7 @@ script = ExtResource("19_4b0d4")
 position = Vector2(462.22217, -61.111107)
 sprite_frames = SubResource("SpriteFrames_4b0d4")
 autoplay = "default"
-frame_progress = 0.42578927
+frame_progress = 0.86043376
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="GreenGem" unique_id=27726911]
 position = Vector2(462.2222, -60.55555)
@@ -1812,7 +1813,7 @@ script = ExtResource("22_fdcok")
 position = Vector2(737.7777, -61.11111)
 sprite_frames = SubResource("SpriteFrames_gtjb1")
 autoplay = "default"
-frame_progress = 0.7468508
+frame_progress = 0.1814953
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="BlueGem" unique_id=1004707405]
 position = Vector2(737.7777, -60.55555)
@@ -1831,7 +1832,7 @@ position = Vector2(1482.222, -61.555553)
 scale = Vector2(1, 1.0555553)
 sprite_frames = SubResource("SpriteFrames_6getb")
 autoplay = "default"
-frame_progress = 0.5239863
+frame_progress = 0.9586307
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="YellowGem" unique_id=1881137624]
 position = Vector2(1482.2222, -61.11111)
@@ -1878,7 +1879,7 @@ shape = SubResource("RectangleShape2D_w4vit")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Platform2" unique_id=1515754431]
 libraries/ = SubResource("AnimationLibrary_p4ajv")
-autoplay = &"RESET"
+autoplay = &"up_down"
 
 [node name="Platform3" type="AnimatableBody2D" parent="." unique_id=1393065757]
 
@@ -1961,7 +1962,7 @@ script = ExtResource("30_fe32w")
 position = Vector2(2436.8887, -64.22221)
 sprite_frames = SubResource("SpriteFrames_1gxbv")
 autoplay = "default"
-frame_progress = 0.5235133
+frame_progress = 0.95815766
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="PurpleGem" unique_id=1544060387]
 position = Vector2(2436.8887, -64.2222)
@@ -1980,7 +1981,7 @@ script = ExtResource("32_ud61l")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="FinalGem" unique_id=1964107318]
 position = Vector2(3176.8887, -17.555573)
 sprite_frames = SubResource("SpriteFrames_o7vjw")
-frame_progress = 0.819875
+frame_progress = 0.25451908
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="FinalGem" unique_id=89141352]
 position = Vector2(3176.6108, -17.277786)
@@ -2014,6 +2015,7 @@ position = Vector2(2901.1108, 7.7777863)
 stream = ExtResource("37_t7h7j")
 
 [node name="CanvasLayer2" parent="." unique_id=288063568 instance=ExtResource("38_t7h7j")]
+visible = false
 
 [connection signal="body_entered" from="Sign" to="Sign" method="_on_body_entered"]
 [connection signal="body_exited" from="Sign" to="Sign" method="_on_body_exited"]

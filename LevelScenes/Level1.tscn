@@ -4,7 +4,6 @@
 [ext_resource type="Texture2D" uid="uid://b28lnsyp8bho4" path="res://backgroud/Pixelart Grasslands/BG/bg2.png" id="2_pitt4"]
 [ext_resource type="Texture2D" uid="uid://cy1560yrklrcx" path="res://backgroud/Pixelart Grasslands/BG/bg3.png" id="3_8obut"]
 [ext_resource type="Texture2D" uid="uid://dgb8ejt8k4isy" path="res://backgroud/Pixelart Grasslands/BG/bg4.png" id="4_8obut"]
-[ext_resource type="AudioStream" uid="uid://das8w0xv21d3t" path="res://DK Island Swing Returns - Donkey Kong Country Returns [OST] [dmMbAaumSKk](1).mp3" id="5_fhrbb"]
 [ext_resource type="Texture2D" uid="uid://dbd4wbp8t1iew" path="res://backgroud/Pixelart Grasslands/DirtTiles.png" id="6_20fby"]
 [ext_resource type="PackedScene" uid="uid://2nwdt5bxj7h0" path="res://tree1.tscn" id="6_hejeo"]
 [ext_resource type="Texture2D" uid="uid://bj35rxah4uty5" path="res://backgroud/Pixelart Grasslands/GrassTiles.png" id="7_16wam"]
@@ -15,8 +14,9 @@
 [ext_resource type="PackedScene" uid="uid://b8lbrg7bovhg8" path="res://tree2.tscn" id="10_ax4po"]
 [ext_resource type="PackedScene" uid="uid://besyhwrkys78r" path="res://stone.tscn" id="10_bf2j0"]
 [ext_resource type="Texture2D" uid="uid://ctr3mdoihwhvu" path="res://backgroud/Pixelart Grasslands/DirtBackgroundTiles.png" id="10_qdnis"]
+[ext_resource type="AudioStream" uid="uid://cna2nvwrykh1m" path="res://Music/normal-level.mp3" id="14_d8pfu"]
 [ext_resource type="Script" uid="uid://d01l8o7jxity5" path="res://LevelScenes/dead_zone.gd" id="15_ax4po"]
-[ext_resource type="AudioStream" uid="uid://d1kbmt21e4fv1" path="res://Jingle (Death) - New Super Mario Bros U - Music [C93w-lyqz_Y].mp3" id="16_bim6h"]
+[ext_resource type="AudioStream" uid="uid://d1kbmt21e4fv1" path="res://Music/Jingle (Death) - New Super Mario Bros U - Music [C93w-lyqz_Y].mp3" id="16_bim6h"]
 [ext_resource type="PackedScene" uid="uid://bow1e8g8dun8x" path="res://GemGreen.tscn" id="17_ov46y"]
 [ext_resource type="PackedScene" uid="uid://baisigkso2eim" path="res://pause_menu.tscn" id="19_d8pfu"]
 
@@ -233,7 +233,7 @@ scale = Vector2(0.7, 0.7)
 [node name="MusicNode" type="AudioStreamPlayer2D" parent="Player" unique_id=1321850157]
 position = Vector2(193.65074, -80.95241)
 scale = Vector2(1.4285713, 1.4285713)
-stream = ExtResource("5_fhrbb")
+stream = ExtResource("14_d8pfu")
 volume_db = -10.0
 autoplay = true
 

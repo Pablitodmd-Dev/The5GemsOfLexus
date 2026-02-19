@@ -3,7 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://dgqmytdjmffgb" path="res://LevelSelect.png" id="1_il3u1"]
 [ext_resource type="Texture2D" uid="uid://b2i2jle0ate5o" path="res://BotonSuelo.tres" id="2_vomi7"]
 [ext_resource type="Script" uid="uid://cjwtik6g0mtah" path="res://level_select.gd" id="2_wevku"]
-[ext_resource type="AudioStream" uid="uid://bhkdpgb7ox6cp" path="res://World Select - Donkey Kong Country Returns (OST) [0HB8BzzQ81g].mp3" id="4_apu6u"]
+[ext_resource type="AudioStream" uid="uid://cg8lb6e4u4gaf" path="res://Music/world select.mp3" id="4_apu6u"]
 
 [node name="LevelSelect" type="Control" unique_id=1483345205]
 layout_mode = 3
@@ -136,6 +136,7 @@ text = "6"
 
 [node name="MusicaFondo" type="AudioStreamPlayer2D" parent="." unique_id=1446173466]
 stream = ExtResource("4_apu6u")
+volume_db = -5.0
 autoplay = true
 
 [connection signal="pressed" from="Level1Button" to="." method="_on_level_1_button_pressed"]

@@ -14,13 +14,13 @@
 [ext_resource type="Texture2D" uid="uid://bj35rxah4uty5" path="res://backgroud/Pixelart Grasslands/GrassTiles.png" id="11_3px8b"]
 [ext_resource type="Texture2D" uid="uid://ctr3mdoihwhvu" path="res://backgroud/Pixelart Grasslands/DirtBackgroundTiles.png" id="11_ek4df"]
 [ext_resource type="PackedScene" uid="uid://cfk3oxqktjyok" path="res://player.tscn" id="12_8gb1h"]
-[ext_resource type="AudioStream" uid="uid://das8w0xv21d3t" path="res://DK Island Swing Returns - Donkey Kong Country Returns [OST] [dmMbAaumSKk](1).mp3" id="13_vhkrb"]
 [ext_resource type="PackedScene" uid="uid://vl4200beymb7" path="res://mob.tscn" id="14_hogks"]
 [ext_resource type="Script" uid="uid://d01l8o7jxity5" path="res://LevelScenes/dead_zone.gd" id="15_6yrh3"]
 [ext_resource type="Script" uid="uid://c17j6pdgx45vn" path="res://LevelScenes/sign_puzzle.gd" id="15_ae1xr"]
 [ext_resource type="Texture2D" uid="uid://brfw7wa6agm5v" path="res://signassets/Game World Assets/objects/1.png" id="15_ssmlh"]
-[ext_resource type="AudioStream" uid="uid://d1kbmt21e4fv1" path="res://Jingle (Death) - New Super Mario Bros U - Music [C93w-lyqz_Y].mp3" id="16_7kurs"]
+[ext_resource type="AudioStream" uid="uid://d1kbmt21e4fv1" path="res://Music/Jingle (Death) - New Super Mario Bros U - Music [C93w-lyqz_Y].mp3" id="16_7kurs"]
 [ext_resource type="PackedScene" uid="uid://mvmsowbouyyi" path="res://GemBlue.tscn" id="17_gdqo4"]
+[ext_resource type="AudioStream" uid="uid://cna2nvwrykh1m" path="res://Music/normal-level.mp3" id="17_ssmlh"]
 [ext_resource type="Texture2D" uid="uid://d025ncwbbcyiq" path="res://2d-decoration-pack/Spritesheets/Nature_props_01.png" id="19_4l1eq"]
 [ext_resource type="PackedScene" uid="uid://baisigkso2eim" path="res://pause_menu.tscn" id="23_ssmlh"]
 
@@ -317,7 +317,7 @@ scale = Vector2(0.7, 0.7)
 [node name="MusicNode" type="AudioStreamPlayer2D" parent="Player" unique_id=1321850157]
 position = Vector2(193.65074, -80.95241)
 scale = Vector2(1.4285713, 1.4285713)
-stream = ExtResource("13_vhkrb")
+stream = ExtResource("17_ssmlh")
 volume_db = -10.0
 autoplay = true
 
