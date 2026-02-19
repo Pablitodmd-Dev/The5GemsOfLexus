@@ -285,7 +285,7 @@ autoplay = "default"
 frame_progress = 0.9960731
 
 [node name="Player" parent="." unique_id=1370263588 instance=ExtResource("12_3qwrg")]
-position = Vector2(768.8888, 47.777786)
+position = Vector2(-126.666595, 54.444458)
 scale = Vector2(0.70000017, 0.7)
 
 [node name="MusicNode" type="AudioStreamPlayer2D" parent="Player" unique_id=1321850157]
