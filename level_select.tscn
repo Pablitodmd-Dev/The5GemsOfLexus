@@ -27,6 +27,7 @@ offset_top = 105.68981
 offset_right = 86.25002
 offset_bottom = 141.87192
 texture_normal = ExtResource("2_vomi7")
+texture_hover = ExtResource("2_vomi7")
 ignore_texture_size = true
 stretch_mode = 0
 

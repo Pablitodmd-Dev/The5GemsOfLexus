@@ -1,0 +1,125 @@
+[gd_scene format=3 uid="uid://b0oun5aycs8ot"]
+
+[ext_resource type="Script" uid="uid://wjf6re203pjk" path="res://MainMenu.gd" id="1_h7a2f"]
+[ext_resource type="Texture2D" uid="uid://dk86kylff3ruq" path="res://LevelSelectedUnfocused.png" id="2_qoqlk"]
+[ext_resource type="FontFile" uid="uid://b0ai4gifom2bp" path="res://fonts/Fontzilla Comic.ttf" id="3_iwfq2"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_uoqt2"]
+font_size = 64
+font_color = Color(1, 1, 0, 1)
+outline_size = 4
+outline_color = Color(0, 0, 0, 1)
+shadow_size = 20
+shadow_color = Color(0.5917481, 0.5573358, 0, 0.37100002)
+
+[sub_resource type="FontVariation" id="FontVariation_cwhwo"]
+base_font = ExtResource("3_iwfq2")
+spacing_space = 10
+spacing_top = 20
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_36l26"]
+bg_color = Color(0.33981532, 0.6142749, 0.17605555, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_fseqb"]
+bg_color = Color(0.16704711, 0.402057, 0, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ke5qf"]
+bg_color = Color(0.59133637, 1, 0.5052581, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[sub_resource type="FontVariation" id="FontVariation_tnt8m"]
+base_font = ExtResource("3_iwfq2")
+spacing_top = 20
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_u4d8l"]
+bg_color = Color(0.6476321, 0.6437342, 0.050708726, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_uoqt2"]
+bg_color = Color(0.40341008, 0.40063214, 1.92523e-07, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_a4owy"]
+bg_color = Color(1.0324832, 1.0324832, 0.4833657, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[node name="CanvasLayer" type="CanvasLayer" unique_id=1171631823]
+
+[node name="Control" type="Control" parent="." unique_id=1745793321]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 1152.0
+offset_bottom = 648.0
+script = ExtResource("1_h7a2f")
+
+[node name="TextureRect" type="TextureRect" parent="Control" unique_id=1730409282]
+layout_mode = 0
+offset_right = 1152.0
+offset_bottom = 648.0
+texture = ExtResource("2_qoqlk")
+
+[node name="MarginContainer" type="MarginContainer" parent="Control" unique_id=693007639]
+layout_mode = 0
+offset_right = 1152.0
+offset_bottom = 648.0
+theme_override_constants/margin_left = 200
+theme_override_constants/margin_top = 100
+theme_override_constants/margin_right = 200
+theme_override_constants/margin_bottom = 100
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Control/MarginContainer" unique_id=781528517]
+layout_mode = 2
+theme_override_constants/separation = 100
+
+[node name="Title" type="Label" parent="Control/MarginContainer/VBoxContainer" unique_id=2055853627]
+layout_mode = 2
+theme_override_colors/font_color = Color(1.031, 1.046, 0.44, 1)
+theme_override_fonts/font = ExtResource("3_iwfq2")
+theme_override_font_sizes/font_size = 70
+text = "THE 5 GEMS 
+OF LEXUS"
+label_settings = SubResource("LabelSettings_uoqt2")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Control/MarginContainer/VBoxContainer" unique_id=1069395199]
+layout_mode = 2
+theme_override_constants/separation = 50
+alignment = 1
+
+[node name="Play" type="Button" parent="Control/MarginContainer/VBoxContainer/VBoxContainer" unique_id=1059119882]
+layout_mode = 2
+theme_override_fonts/font = SubResource("FontVariation_cwhwo")
+theme_override_font_sizes/font_size = 60
+theme_override_styles/normal = SubResource("StyleBoxFlat_36l26")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_fseqb")
+theme_override_styles/hover = SubResource("StyleBoxFlat_ke5qf")
+text = "PLAY"
+
+[node name="Options" type="Button" parent="Control/MarginContainer/VBoxContainer/VBoxContainer" unique_id=532414474]
+layout_mode = 2
+theme_override_fonts/font = SubResource("FontVariation_tnt8m")
+theme_override_font_sizes/font_size = 60
+theme_override_styles/normal = SubResource("StyleBoxFlat_u4d8l")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_uoqt2")
+theme_override_styles/hover = SubResource("StyleBoxFlat_a4owy")
+text = "OPTIONS"
+
+[connection signal="pressed" from="Control/MarginContainer/VBoxContainer/VBoxContainer/Play" to="Control" method="_on_play_pressed"]
+[connection signal="pressed" from="Control/MarginContainer/VBoxContainer/VBoxContainer/Options" to="Control" method="_on_options_pressed"]
