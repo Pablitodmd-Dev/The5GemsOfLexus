@@ -5,7 +5,7 @@ var red_color = Color(1, 0.2, 0.2)
 var white_color = Color(1, 1, 1)    
 
 func _ready():
-	var progress = GameManager.niveles_desbloqueados
+	var progress = GameManager.unlocked_levels
 
 	$Level1Button/Label.text = "1"
 	if progress > 1:
