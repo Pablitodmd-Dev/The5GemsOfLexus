@@ -2,11 +2,11 @@ extends Area2D
 
 @onready var death_sound = $"../DeathSound" 
 
-var ya_murio = false
+var is_dead = false
 
 func _on_body_entered(body):
-	if body.name == "Player" and not ya_murio:
-		ya_murio = true # Bloqueamos futuras entradas
+	if body.name == "Player" and not is_dead:
+		is_dead = true 
 		
 		var music = body.get_node_or_null("MusicNode")
 		if music:

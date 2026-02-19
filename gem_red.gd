@@ -4,4 +4,4 @@ extends Area2D
 
 func _on_body_entered(body):
 	if body.name == "Player":
-		GameManager.ganar_nivel(current_level_number)
+		GameManager.win_level(current_level_number)
