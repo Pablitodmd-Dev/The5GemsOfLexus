@@ -21,7 +21,7 @@
 [ext_resource type="Texture2D" uid="uid://d025ncwbbcyiq" path="res://2d-decoration-pack/Spritesheets/Nature_props_01.png" id="18_tdgf4"]
 [ext_resource type="Script" uid="uid://tgtuxhib7qtd" path="res://LevelScenes/GreenGemFinalLevel.gd" id="19_4b0d4"]
 [ext_resource type="Texture2D" uid="uid://cc4wj1vrps7yn" path="res://Coin_Gems/spr_coin_strip4.png" id="19_gyxjm"]
-[ext_resource type="AudioStream" uid="uid://btarpiyi15ndu" path="res://Music/Zelda Rupee - Sound effects HD _ sfx _ No copyright ( download Link ) [rEKZ2BQDEzw].mp3" id="21_ksjty"]
+[ext_resource type="AudioStream" uid="uid://btarpiyi15ndu" path="res://Music/soundGem.mp3" id="21_ksjty"]
 [ext_resource type="Script" uid="uid://copj73arxtcmg" path="res://LevelScenes/BlueGemFinalLevel.gd" id="22_fdcok"]
 [ext_resource type="Texture2D" uid="uid://dsp6ddq6d4o6b" path="res://Coin_Gems/spr_coin_azu.png" id="23_qypv1"]
 [ext_resource type="Script" uid="uid://by1aukmmkd8h5" path="res://LevelScenes/YellowGemFinalLevel.gd" id="24_4fknl"]

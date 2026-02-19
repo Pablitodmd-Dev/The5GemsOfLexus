@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://sgifc388s48w" path="res://gem_green.gd" id="1_hxfkc"]
 [ext_resource type="Texture2D" uid="uid://cc4wj1vrps7yn" path="res://Coin_Gems/spr_coin_strip4.png" id="1_kba58"]
+[ext_resource type="AudioStream" uid="uid://btarpiyi15ndu" path="res://Music/soundGem.mp3" id="3_ype5j"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_hxfkc"]
 atlas = ExtResource("1_kba58")
@@ -48,10 +49,14 @@ script = ExtResource("1_hxfkc")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=506759509]
 sprite_frames = SubResource("SpriteFrames_1d2en")
 autoplay = "default"
-frame_progress = 0.490437
+frame_progress = 0.06251016
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1318406282]
 scale = Vector2(0.8, 0.8)
 shape = SubResource("CircleShape2D_kba58")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=1547504190]
+stream = ExtResource("3_ype5j")
+pitch_scale = 1.5
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
