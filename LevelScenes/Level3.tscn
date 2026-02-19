@@ -278,7 +278,7 @@ position = Vector2(246.66666, -16.666656)
 scale = Vector2(1, 0.99999994)
 
 [node name="Player" parent="." unique_id=1370263588 instance=ExtResource("12_718a4")]
-position = Vector2(286.66663, -56.66666)
+position = Vector2(-119.99997, 56.666668)
 scale = Vector2(0.7, 0.7)
 
 [node name="MusicNode" type="AudioStreamPlayer2D" parent="Player" unique_id=1321850157]
