@@ -44,9 +44,13 @@ animations = [{
 "speed": 8.0
 }]
 
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_ubaqv"]
+radius = 2.0
+height = 7.0
+
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_nokgg"]
-radius = 4.5
-height = 9.0
+radius = 3.0
+height = 15.0
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_1qmh0"]
 size = Vector2(168.44232, 35.75962)
@@ -64,14 +68,20 @@ sprite_frames = SubResource("SpriteFrames_b3mxk")
 animation = &"idle"
 frame_progress = 0.71043295
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1500654493]
-position = Vector2(0, -1.5192308)
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1382189157]
+shape = SubResource("CapsuleShape2D_ubaqv")
+
+[node name="KillZone" type="Area2D" parent="." unique_id=1754197311]
+
+[node name="KillZone" type="CollisionShape2D" parent="KillZone" unique_id=1500654493]
+position = Vector2(0, 0.7884613)
+rotation = -1.5712304
 shape = SubResource("CapsuleShape2D_nokgg")
+debug_color = Color(0.71323633, 0.48456514, 0, 0.41960785)
 
 [node name="Damage" type="Area2D" parent="." unique_id=1586598557]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Damage" unique_id=1758516604]
-position = Vector2(0, -6.1538467)
 shape = SubResource("RectangleShape2D_1qmh0")
 debug_color = Color(0, 0.5988127, 0.70872307, 0.41960785)
 
@@ -86,6 +96,7 @@ debug_color = Color(0.99531406, 0, 0.21528006, 0.41960785)
 wait_time = 2.0
 one_shot = true
 
+[connection signal="body_entered" from="KillZone" to="." method="_on_kill_zone_body_entered"]
 [connection signal="body_entered" from="Damage" to="." method="_on_damage_body_entered"]
 [connection signal="body_entered" from="Dead" to="." method="_on_dead_body_entered"]
 [connection signal="timeout" from="JumpTime" to="." method="_on_jump_time_timeout"]

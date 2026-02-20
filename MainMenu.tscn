@@ -3,6 +3,7 @@
 [ext_resource type="Script" uid="uid://wjf6re203pjk" path="res://MainMenu.gd" id="1_h7a2f"]
 [ext_resource type="Texture2D" uid="uid://dk86kylff3ruq" path="res://LevelSelectedUnfocused.png" id="2_qoqlk"]
 [ext_resource type="FontFile" uid="uid://b0ai4gifom2bp" path="res://fonts/Fontzilla Comic.ttf" id="3_iwfq2"]
+[ext_resource type="AudioStream" uid="uid://chd5rrul5ge4e" path="res://Music/MenuScreenTheme.mp3" id="4_qoqlk"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_uoqt2"]
 font_size = 64
@@ -120,6 +121,11 @@ theme_override_styles/normal = SubResource("StyleBoxFlat_u4d8l")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_uoqt2")
 theme_override_styles/hover = SubResource("StyleBoxFlat_a4owy")
 text = "CONTROLS"
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="Control" unique_id=1575957315]
+stream = ExtResource("4_qoqlk")
+volume_db = -5.0
+autoplay = true
 
 [connection signal="pressed" from="Control/MarginContainer/VBoxContainer/VBoxContainer/Play" to="Control" method="_on_play_pressed"]
 [connection signal="pressed" from="Control/MarginContainer/VBoxContainer/VBoxContainer/Options" to="Control" method="_on_options_pressed"]

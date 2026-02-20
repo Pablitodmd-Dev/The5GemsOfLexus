@@ -2,7 +2,7 @@ extends CharacterBody2D
 
 var speed = 150
 var jump_force = -350
-var gravity = 800
+var gravity = 700
 
 var player = null
 var can_jump = true
@@ -42,3 +42,8 @@ func _on_dead_body_entered(body: Node2D) -> void:
 	if body.name == "Player":
 		body.velocity.y = -250
 		queue_free()
+
+func _on_kill_zone_body_entered(body: Node2D) -> void:
+	if body.name == "Player":
+		if body.has_method("die"):
+			body.die()
