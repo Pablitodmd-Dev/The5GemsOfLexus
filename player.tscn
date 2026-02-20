@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://dce7xkrxpcb4t" path="res://character_body_2d.gd" id="1_pjt0s"]
 [ext_resource type="Texture2D" uid="uid://cxweit76cg41p" path="res://backgroud/Pixelart Grasslands/CharacterSheet.png" id="2_wa5vi"]
+[ext_resource type="AudioStream" uid="uid://d1kbmt21e4fv1" path="res://Music/Jingle (Death) - New Super Mario Bros U - Music [C93w-lyqz_Y].mp3" id="3_i3pqv"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_wfnr8"]
 atlas = ExtResource("2_wa5vi")
@@ -91,3 +92,6 @@ shape = SubResource("CapsuleShape2D_pjt0s")
 limit_left = 0
 limit_top = 0
 limit_bottom = 648
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=517074150]
+stream = ExtResource("3_i3pqv")

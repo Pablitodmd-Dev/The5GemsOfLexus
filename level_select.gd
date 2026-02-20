@@ -1,7 +1,7 @@
 extends Control
 
-var blue_color = Color(0.2, 0.6, 1) 
-var red_color = Color(1, 0.2, 0.2)  
+var blue_color = Color(0.462, 0.898, 0.0, 1.0) 
+var red_color = Color(0.208, 0.55, 1.0, 1.0)  
 var white_color = Color(1, 1, 1)    
 
 func _ready():

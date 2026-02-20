@@ -3,8 +3,10 @@ extends CharacterBody2D
 var speed = 200
 var jump_velocity = -400
 var gravity = 1000
+var is_dead = false 
 
 func _physics_process(delta):
+	if is_dead: return 
 
 	if Input.is_action_pressed("right"): 
 		velocity.x = speed
@@ -26,3 +28,19 @@ func _physics_process(delta):
 		velocity.y = jump_velocity
 
 	move_and_slide()
+
+func die():
+	if is_dead: return 
+	
+	is_dead = true
+	velocity = Vector2.ZERO 
+	$AnimatedSprite2D.play("idle") 
+
+	if has_node("MusicNode"): 
+		$MusicNode.stop()
+
+	if has_node("AudioStreamPlayer2D"):
+		$AudioStreamPlayer2D.play()
+
+	await get_tree().create_timer(5.0).timeout
+	get_tree().reload_current_scene()

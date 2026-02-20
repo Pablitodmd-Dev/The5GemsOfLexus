@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://dl6lvh70vjogo" path="res://backgroud/Pixelart Grasslands/SpikeTiles.png" id="2_8fhau"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_p60og"]
-size = Vector2(28, 16.55)
+size = Vector2(27, 16.55)
 
 [node name="Area2D" type="Area2D" unique_id=1733164491]
 script = ExtResource("1_nrdsm")
@@ -17,7 +17,7 @@ region_enabled = true
 region_rect = Rect2(24.0066, 44.99931, 7.0314217, 3.0301857)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1753395713]
-position = Vector2(2.2, -3)
+position = Vector2(2.2499998, -3)
 scale = Vector2(0.5, 0.5)
 shape = SubResource("RectangleShape2D_p60og")
 debug_color = Color(1, 0, 0, 0.41960785)
