@@ -14,9 +14,8 @@
 
 ### 🌟 Características Principales
 * **🎮 Jugabilidad Pura:** Inspirado en el movimiento de *Super Mario Bros* y los acertijos de *The Legend of Zelda*.
-* **🧩 Desafío Mental:** Cada templo requiere ingenio para avanzar.
+* **🧩 Desafío Mental:** Algunos templos requieren ingenio para avanzar.
 * **🛡️ Sin Frustración:** Sistema de **vidas ilimitadas** para que disfrutes del viaje a tu ritmo.
-* **🗣️ Inmersión:** Zack cuenta con voz propia para reaccionar a la historia.
 * **✨ Estética:** Arte llamativo y alegre con desplazamiento lateral (Side-scrolling).
 
 ### 🏛️ Estructura de Niveles (5+1)
@@ -29,9 +28,9 @@ El juego se divide en 5 templos elementales y un clímax final:
 | **3** | Templo de Topacio | Desierto y Tiempo | 🟡 Gema Amarilla |
 | **4** | Templo de Rubí | Fuego y Lava | 🔴 Gema Roja |
 | **5** | Templo de Amatista | Luz y Misterio | 🟣 Gema Púrpura |
-| **6** | **El Nexo de Lexus** | **Portal de la Entidad** | **El Gran Deseo** |
+| **6** | **El Nexo de Lexus** | **Castillo** | **El Gran Deseo** |
 
-> ⚠️ **Nota:** El sexto nivel solo aparece tras conseguir los 5 fragmentos. Allí deberás esquivar los ataques de **La Entidad** y derrotar a sus mini-jefes saltando sobre ellos.
+> ⚠️ **Nota:** El sexto nivel solo aparece tras conseguir lss 5 gemas. En este nivel encontrarás la Gema de los Deseos que habla la profecia.
 
 ---
 
@@ -43,7 +42,6 @@ El juego se divide en 5 templos elementales y un clímax final:
 * **🎮 Pure Gameplay:** Inspired by *Super Mario Bros* physics and *The Legend of Zelda* environmental puzzles.
 * **🧩 Brain Teasers:** Each temple requires wit and logic to proceed.
 * **🛡️ No Frustration:** **Unlimited lives** system to enjoy the journey at your own pace.
-* **🗣️ Immersive:** Full voice acting for Zack to bring the character to life.
 * **✨ Aesthetics:** Vibrant, striking art style with classic side-scrolling action.
 
 ### 🏛️ Level Structure (5+1)
@@ -54,7 +52,7 @@ The game consists of 5 elemental temples and a final climax:
 3. **Topaz Temple:** Desert sands and timed challenges.
 4. **Ruby Temple:** Lethal lava and moving platforms.
 5. **Amethyst Temple:** Gravity and light-based riddles.
-6. **The Lexus Nexus:** The final boss battle against **The Entity**.
+6. **The Lexus Nexus:** The final level.
 
 ---
 
@@ -72,7 +70,7 @@ The game consists of 5 elemental temples and a final climax:
 ## 🛠️ Especificaciones Técnicas / Tech Specs
 * **Art Style:** Pixel Art / Realistic 2.5D.
 * **Music:** Simple & Soothing Melodies.
-* **Engine:** [To be defined]
+* **Engine:** Godot
 * **Monetization:** 100% Free-to-Play.
 
 ---
